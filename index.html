@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atkon Shop</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Atkon Shop</h1>
+        <p>Quality products at great prices</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+
+        <section class="hero">
+            <h2>Welcome to Our Shop</h2>
+            <p>Find your favorite products here.</p>
+            <button>Shop Now</button>
+        </section>
+
+        <!-- Products -->
+        <section id="products">
+            <h2>Our Products</h2>
+
+            <div class="product-container">
+
+                <div class="product">
+                    <img src="images/Beer.jpg"alt="Beer">
+                    <h3>Enjoy your beer</h3>
+                    <p>Some times its good to enjoy your money because life is short.</p>
+                    <h4>UGX 5000/=</h4>
+                    <button onclick="addToCart('Beer',5000)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/Bread.jpg"alt="Bread">
+                    <h3>Enjoy your Bread</h3>
+                    <p>Dont died hungry when our natural bread is here.</p>
+                    <h4>UGX 6000/=</h4>
+                    <button onclick="addToCart('Bread',6000)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/Soda.jpg"alt="Soda">
+                    <h3>Enjoy your Soda</h3>
+                    <p>Some times its good to enjoy your money because life is short.</p>
+                    <h4>UGX 2000/=</h4>
+                    <button onclick="addToCart('Soda',2000)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/Water.jpg"alt="Water">
+                    <h3>Enjoy your Water</h3>
+                    <p>Thirsty can kill but with our natural mineral water your safe.</p>
+                    <h4>UGX 2000/=</h4>
+                    <button onclick="addToCart('Soda',2000)">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>
+                We are a small online shop providing quality products
+                at affordable prices.
+            </p>
+        </section>
+        <!-- Checkout Form -->
+<section class="checkout">
+    <h2>Checkout</h2>
+
+    <form id="checkout-form" onsubmit="sendOrderToWhatsApp(event)">
+
+        <label for="customer-name">Full Name</label>
+        <input
+            type="text"
+            id="customer-name"
+            placeholder="Enter your full name"
+            required
+        >
+
+        <label for="customer-phone">Phone Number</label>
+        <input
+            type="tel"
+            id="customer-phone"
+            placeholder="e.g. 0700123456"
+            required
+        >
+
+        <label for="delivery-address">Delivery Address</label>
+        <textarea
+            id="delivery-address"
+            placeholder="Enter your delivery address"
+            required
+        ></textarea>
+
+        <button type="submit">Order Through WhatsApp</button>
+
+    </form>
+</section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: nshabomwei@gmail.com</p>
+            <p>Phone: +256 7733935</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Simple Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

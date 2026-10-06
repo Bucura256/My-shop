@@ -1,0 +1,230 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* Products */
+#products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#products h2 {
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ff9800;
+}
+
+/* About and Contact */
+.about,
+.contact {
+    background-color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.about h2,
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile design */
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
+/* Shopping Cart */
+
+.cart {
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cart h2 {
+    margin-bottom: 25px;
+}
+
+.cart-item {
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.cart-item button {
+    margin: 5px;
+}
+
+.cart-item span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.cart h3 {
+    margin: 20px;
+}
+/* Checkout */
+
+.checkout {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.checkout label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.checkout input,
+.checkout textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkout textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.checkout button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
